@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ember Royale</title>
+  <link rel="stylesheet" href="two.css">
+</head>
+<body>
+  <!--HEADER-->
+  <header>
+    <div class="logo">
+      <h2>Ember Royale</h2>
+      <span>Restaurant</span>
+    </div>
+
+    <nav class="main-nav" id="mainNav">
+      <a href="#" class="nav-link">HOME</a>
+      <a href="#about" class="nav-link">ABOUT</a>
+      <a href="#menu" class="nav-link">MENU</a>
+      <a href="#gallery" class="nav-link">GALLERY</a>
+      <a href="#reviews" class="nav-link">REVIEWS</a>
+      <a href="#contact" class="nav-link">CONTACT</a>
+    </nav>
+
+    <button class="reserve-btn" id="reserveBtn1">
+      RESERVE A TABLE
+    </button>
+
+    <!-- Hamburger, only shown on small screens -->
+    <button class="burger" id="burgerBtn" aria-label="Toggle menu">
+      <span>-</span>
+      <span>-</span>
+      <span>-</span>
+    </button>
+  </header>
+
+
+  <!--Hero Section-->
+  <section class="hero">
+    <div class="hero-text">
+      <p class="p">DISCOVER THE TRUE TASTE</p>
+      <h1>
+        Good Food<br>
+        Great<span class="span"> Moments</span>
+      </h1>
+      <p class="description">
+        Where passion meets flavour. We serve delicious dishes made with love and the finest ingredients
+      </p>
+      <div class="buttons">
+        <a href="#menu" class="first-btn">EXPLORE MENU</a>
+        <a href="#about" class="first-btn">OUR STORY</a>
+      </div>
+    </div>
+  </section>
+
+  <!--STORY SECTION-->
+  <section class="story-section" id="about">
+    <!--left side-->
+    <div class="image-area">
+      <img class="main-image" src="imgs/image.jpg" alt="">
+      <div class="small-image-wrap">
+        <img class="small-image" src="imgs/image-1.jpg" alt="">
+      </div>
+    </div>
+    <!--right side-->
+    <div class="text-area">
+      <p class="label">OUR STORY</p>
+      <h1 class="h1">Crafted with Passion, <br>Served with <span class="span">Love</span></h1>
+      <p class="description-2">
+        At Flavoria, every dish tells a story. Our chefs carefully select the freshest ingredients
+        and blend them with creativity to bring you an unforgettable dining experience.
+      </p>
+      <button class="second-btn">LEARN MORE</button>
+    </div>
+  </section>
+
+  <!--SIGNATURE MENU-->
+  <section class="menu-section" id="menu">
+    <p class="menu-label">OUR MENU</p>
+    <h2 class="menu-title">Signature Dishes</h2>
+
+    <div class="dish-grid">
+
+      <div class="dish-card">
+        <img src="imgs/020.png" alt="">
+        <h3>Grilled Ribeye Steak</h3>
+        <p class="dish-desc">Juicy ribeye grilled to perfection with herbs &amp; garlic</p>
+        <p class="dish-price">$24.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/010.png" alt="">
+        <h3>Creamy Alfredo Pasta</h3>
+        <p class="dish-desc">Rich &amp; creamy pasta with mushrooms and parmesan</p>
+        <p class="dish-price">$14.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/030.png" alt="">
+        <h3>Lemon Herb Salmon</h3>
+        <p class="dish-desc">Fresh salmon with lemon butter sauce and veggies with extra eggs</p>
+        <p class="dish-price">$19.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/040.png" alt="">
+        <h3>Chocolate Lava Cake</h3>
+        <p class="dish-desc">Warm chocolate cake with melted center &amp; ice cream</p>
+        <p class="dish-price">$8.99</p>
+      </div>
+
+    </div>
+
+    <!-- Hidden until "More" is clicked -->
+    <div class="dish-grid extra-dishes" id="extraDishes">
+
+      <div class="dish-card">
+        <img src="imgs/image-23.jpg" alt="">
+        <h3>Garlic Butter Shrimp</h3>
+        <p class="dish-desc">Pan-seared shrimp in garlic butter with a hint of chili</p>
+        <p class="dish-price">$18.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/image-20.jpg" alt="">
+        <h3>Beef Suya Tacos</h3>
+        <p class="dish-desc">Spiced grilled beef, pickled onions and suya spice in soft tacos</p>
+        <p class="dish-price">$13.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/image-26.jpg" alt="">
+        <h3>Vegetable Stir Fry</h3>
+        <p class="dish-desc">Seasonal vegetables tossed in a light garlic soy glaze</p>
+        <p class="dish-price">$11.99</p>
+      </div>
+
+      <div class="dish-card">
+        <img src="imgs/image-12.jpg" alt="">
+        <h3>Classic Tiramisu</h3>
+        <p class="dish-desc">Espresso-soaked layers with mascarpone cream</p>
+        <p class="dish-price">$9.99</p>
+      </div>
+
+    </div>
+
+    <div class="more-btn-wrap">
+      <button class="more-btn" id="moreBtn">More +</button>
+    </div>
+  </section>
+
+  <!--CHOOSE SECTION-->
+  <section class="choose-section">
+    <p class="menu-label">WHY CHOOSE US?</p>
+    <h2 class="title">An Experience Like No Other</h2>
+
+    <div class="choose-grid">
+
+      <div class="choose-card">
+        <img src="imgs/11.png" alt="">
+        <h3>Expert Chefs</h3>
+        <p class="choose-desc">Talented chefs crafting flavour masterpieces</p>
+      </div>
+
+      <div class="choose-card">
+        <img src="imgs/12.png" alt="">
+        <h3>Fresh Ingredients</h3>
+        <p class="choose-desc">We use only the freshest and finest ingredients</p>
+      </div>
+
+      <div class="choose-card">
+        <img src="imgs/13.png" alt="">
+        <h3>Great Ambience</h3>
+        <p class="choose-desc">Enjoy a warm, cozy and welcoming atmosphere</p>
+      </div>
+
+      <div class="choose-card">
+        <img src="imgs/14.png" alt="">
+        <h3>Chocolate Lava Cake</h3>
+        <p class="choose-desc">Every dish is prepared with passion and care</p>
+      </div>
+    </div>
+  </section>
+
+  <!--GALLERY SECTION-->
+  <section class="gallery-section" id="gallery">
+    <p class="menu-label">A LOOK INSIDE</p>
+    <h2 class="title">Our Gallery</h2>
+
+    <div class="gallery-grid" id="galleryGrid">
+      <img src="imgs/g1.png" alt="">
+      <img src="imgs/g2.png" alt="">
+      <img src="imgs/g3.png" alt="">
+      <img src="imgs/g4.png" alt="">
+      <img src="imgs/g5.png" alt="">
+      <img src="imgs/g6.png" alt="">
+    </div>
+  </section>
+
+  <!--TESTIMONIAL SECTION-->
+  <section class="testimonial" id="reviews">
+    <button class="arrow" id="prevArrow">&#10094</button>
+
+    <div class="testimonial-content">
+      <div class="stars" id="testimonialStars">&#9733; &#9733; &#9733; &#9733; &#9733; </div>
+      <p class="quote" id="testimonialQuote">
+        "The best dining experience I've ever had!"<br>
+        "The food, service and ambience were absolutely perfect."
+      </p>
+
+      <div class="customer">
+        <img class="profile" id="testimonialImg" src="imgs/profile-1.png" alt="">
+        <span class="sp" id="testimonialName">&ndash; Amara Ogbona</span>
+      </div>
+    </div>
+
+    <button class="arrow" id="nextArrow">&#10095</button>
+  </section>
+
+  <!--RESERVATION TABLE-->
+  <section class="reserve-banner">
+    <div>
+      <h2>Book Your Table Now</h2>
+      <p>We can't wait to serve you!</p>
+    </div>
+    <button class="reserve-btn2" id="reserveBtn2">RESERVE A TABLE</button>
+  </section>
+
+  <!--FOOTER-->
+  <footer class="footer" id="contact">
+    <div class="footer-col">
+      <h2 class="logo2">Ember Royale</h2>
+      <p class="logo-sub">RESTAURANT</p>
+      <p>Good food, great moments. Join us for an unforgettable culinary experience</p>
+    </div>
+
+    <div class="footer-col">
+      <h4>QUICK LINKS</h4>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#gallery">Gallery</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="footer-col">
+      <h4>HOUR</h4>
+      <p>Monday &ndash; Friday<br><span class="brs">11:00 AM &ndash; 10:00 PM</span></p>
+      <p>Saturday &ndash; Sunday<br><span class="brs">10:00 Am &ndash; 11:00 PM</span></p>
+    </div>
+
+    <div class="footer-col">
+      <h4>CONTACT</h4>
+      <p>&#128222; (123) 456-7890</p>
+      <p>&#9993; hello@bond.com</p>
+      <p>&#128205; 123 Bond Street. <br>Foodie City, FC 12345</p>
+    </div>
+  </footer>
+
+  <!--RESERVATION MODAL (hidden until a Reserve button is clicked)-->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="reserve-modal">
+      <button class="modal-close" id="modalClose">&times;</button>
+
+      <h3>Reserve Your Table</h3>
+      <p class="modal-sub">We'll hold your table for 15 minutes past your reservation time.</p>
+
+      <form id="reserveForm">
+        <label for="fullName">Full Name</label>
+        <input type="text" id="fullName" placeholder="Your name" required>
+
+        <label for="phone">Phone Number</label>
+        <input type="tel" id="phone" placeholder="e.g. 0801 234 5678" required>
+
+        <div class="form-row">
+          <div>
+            <label for="resDate">Date</label>
+            <input type="date" id="resDate" required>
+          </div>
+          <div>
+            <label for="resTime">Time</label>
+            <input type="time" id="resTime" required>
+          </div>
+        </div>
+
+        <label for="guests">Guests</label>
+        <select id="guests">
+          <option>1 Guest</option>
+          <option>2 Guests</option>
+          <option>3 Guests</option>
+          <option>4 Guests</option>
+          <option>5+ Guests</option>
+        </select>
+
+         <div class="preorder-section">
+          <p class="preorder-label">Pre-order Your Menu <span>(optional)</span></p>
+          <div class="preorder-grid">
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Grilled Ribeye Steak"> Grilled Ribeye Steak</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Creamy Alfredo Pasta"> Creamy Alfredo Pasta</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Lemon Herb Salmon"> Lemon Herb Salmon</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Chocolate Lava Cake"> Chocolate Lava Cake</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Garlic Butter Shrimp"> Garlic Butter Shrimp</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Beef Suya Tacos"> Beef Suya Tacos</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Vegetable Stir Fry"> Vegetable Stir Fry</label>
+            <label class="preorder-item"><input type="checkbox" name="preorder" value="Classic Tiramisu"> Classic Tiramisu</label>
+          </div>
+        </div>
+
+        <button type="submit" class="reserve-btn2" id="modalSubmit">Confirm Reservation</button>
+
+        <p class="modal-success" id="modalSuccess"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="index-1.js"></script>
+</body>
+</html>
